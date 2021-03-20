@@ -15,11 +15,11 @@ export default function Header() {
     return (
         <div className="header-container">
             <p onMouseOver={() => animateTitleText(true)} onMouseLeave={() => animateTitleText(false)}>
-                <span>ef</span>
+                <span>{'<ef'}</span>
                 <span
                     className="completed-name"
                     style={{ width: fulltext ? '90px' : '0px', opacity: fulltext ? '1' : '0'}}>ilipe</span>
-                <span>x</span>
+                <span>x></span>
             </p>
             <div className="contacts-header">
                 <a href="https://github.com/eFilipeCode" target="_blank" rel="noreferrer">
