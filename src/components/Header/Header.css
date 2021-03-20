@@ -1,0 +1,51 @@
+.header-container {
+    width: 100vw;
+    height: 6rem;
+    padding: 30px 70px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container p {
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 3rem;
+    color: #151515;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container p span {
+    transition: all ease-out 0.3s;
+}
+
+.header-container p span.completed-name {
+    width: 0px;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.contacts-header {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contacts-header a {
+    text-decoration: none;
+    color: #151515;
+    position: relative;
+    margin: 0px 10px;
+    transition: all 0.1s;
+    top: 0px;
+}
+
+.contacts-header a:hover {
+    top: -5px;
+}
