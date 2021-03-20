@@ -21,7 +21,7 @@
     transform: translateY(70px);
 }
 
-.showcase-texts p.description {
+.showcaseAbout-container .showcase-texts p.description {
     text-indent: 10px;
     text-justify: kashida;
     margin-top: 10px;
