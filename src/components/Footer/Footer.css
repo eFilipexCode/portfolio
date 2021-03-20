@@ -1,0 +1,11 @@
+.footer {
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-style: italic;
+    border-top: 3px dashed #151515;
+}
