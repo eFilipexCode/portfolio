@@ -49,3 +49,13 @@
 .contacts-header a:hover {
     top: -5px;
 }
+
+@media (max-width: 501px) {
+    .header-container {
+        justify-content: center;
+        align-items: center;
+    }
+    .contacts-header {
+        display: none;
+    }
+};
