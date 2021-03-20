@@ -24,6 +24,10 @@
     transition: all ease-out 0.3s;
 }
 
+.header-container p::selection {
+    background-color: unset;
+}
+
 .header-container p span.completed-name {
     width: 0px;
     overflow: hidden;
@@ -55,7 +59,12 @@
         justify-content: center;
         align-items: center;
     }
+    .header-container p{
+        pointer-events: none;
+    }
     .contacts-header {
         display: none;
     }
-};
+}
+
+;
