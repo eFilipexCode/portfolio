@@ -1,0 +1,23 @@
+.contact-container {
+    width: 100vw;
+    padding: 100px 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-container a {
+    text-align: center;
+    color: #151515;
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+    transition: all 0.2s ease;
+}
+
+.contact-container a:hover {
+    transform: translateY(-10px);
+}
+
+.contact-container a p {
+    margin-top: 10px;
+}
