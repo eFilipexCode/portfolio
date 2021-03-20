@@ -3,6 +3,8 @@ import Showcase from './components/Showcase/Showcase';
 import ShowCaseAbout from './components/ShowCaseAbout/ShowCaseAbout';
 import SectionSelector from './components/SectionSelector/SectionSelector';
 import Topic from './components/Topic/Topic';
+import ContactTab from './components/ContactTab/ContactTab';
+import Footer from './components/Footer/Footer';
 import { WebsitesContextProvider } from './contexts/WebsitesContext';
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
       <SectionSelector />
       <Showcase />
       <Topic title="Contact" description="Let's keep in touch!" />
+      <ContactTab />
+      <Footer />
     </WebsitesContextProvider>
   );
 }
