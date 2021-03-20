@@ -1,0 +1,37 @@
+.sections-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 50px;
+}
+
+.sections-header a {
+    color: #151515;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.sections-header a::after {
+    width: 0px;
+    content: "";
+    position: relative;
+    display: block;
+    transition: all 0.4s ease;
+    background-color: #151515;
+    height: 3px;
+}
+
+.sections-header a:hover:after {
+    width: 100px;
+}
+
+.sections-header p {
+    font-size: 1rem;
+    font-family: 'Merriweather', serif;
+    margin-top: 10px;
+    text-indent: 30px;
+}
