@@ -1,13 +1,17 @@
 .sections-container {
     width: 100vw;
     height: 5rem;
+}
+
+.project-buttons {
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.sections-container button {
+.project-buttons > button {
     padding: 15px 10px;
     border: none;
     font-family: 'Merriweather', serif;
@@ -15,4 +19,37 @@
     cursor: pointer;
     border: 1px solid #151515;
     background-color: #ededed;
+    width: 125px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+@media (max-width: 900px) { 
+    .sections-container {
+        margin: 20px 0px;
+        height: auto;
+    }
+
+    .sections-container .project-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0px 30px;
+    }
+
+    .sections-container .project-buttons button {
+        margin: 10px 5px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 499px) {
+    .sections-container .project-buttons button {
+        margin: 3px 2.5px;
+    }
 }

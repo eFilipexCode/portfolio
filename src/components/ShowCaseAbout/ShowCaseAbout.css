@@ -18,18 +18,17 @@
     align-items: flex-start;
     padding: 40px 300px 40px 40px;
     margin: 20px;
+    text-align: justify;
     transform: translateY(70px);
 }
 
 .showcaseAbout-container .showcase-texts p.description {
-    text-indent: 10px;
+    text-indent: 30px;
     text-justify: kashida;
     margin-top: 10px;
 }
 
 .showcaseAbout-container .showcase-image {
-    height: 12rem;
-    width: 10rem;
     flex:1;
     overflow: hidden;
     z-index: 1;
@@ -39,8 +38,80 @@
     width: 60%;
     height: 100%;
     border: 2px solid #151515;
+    transform: translateY(0px);
+    transition: 0.2s ease;
+}
+
+.showcaseAbout-container .showcase-image:hover {
+    transform: translateY(-5px);
 }
 
 .showcaseAbout-container .showcase-image img {
     position: relative;
+}
+
+@media (max-width: 900px) {
+    .showcaseAbout-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+    }
+
+    .showcaseAbout-container .showcase-texts {
+        width: 100%;
+        height: 20rem;
+        border: none;
+        background-color: #eee;
+        margin: 20px 0px;
+        align-items: center;
+        justify-content: center;
+        padding: 60px;
+        transform: translateY(0px);    
+    }
+
+    .showcaseAbout-container .showcase-texts p.description {
+        margin-top: 20px;
+    }
+
+    .showcaseAbout-container .showcase-image {
+        width: 80vw;
+        max-height: 30vh;
+        position: relative;
+        top: 0;
+        right: 0;
+        border: none;
+        overflow: hidden;
+        transform: translateY(-70px);
+    }
+
+    .showcaseAbout-container .showcase-image img {
+        position: relative;
+        width: 140%;
+        height: auto;
+    }
+
+    .showcaseAbout-container .showcase-image:hover {
+        transform: translateY(-75px);
+    }
+}
+
+@media (max-width: 499px) {
+    .showcaseAbout-container .showcase-texts {
+        padding: 30px;  
+    }
+
+    .showcaseAbout-container .showcase-image {
+        transform: translateY(-40px);
+    }
+
+    .showcaseAbout-container .showcase-image img {
+        position: relative;
+        width: 140%;
+        height: auto;
+    }
+
+    .showcaseAbout-container .showcase-image:hover {
+        transform: translateY(-45px);
+    }
 }

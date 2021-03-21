@@ -21,3 +21,21 @@
 .contact-container a p {
     margin-top: 10px;
 }
+
+@media (max-width: 900px) {
+    .contact-container {
+        padding: 50px 10px;
+    }
+
+    .contact-container a {
+        margin: 10px;
+    }
+
+    .contact-container a:hover {
+        transform: translateY(0px);
+    }
+
+    .contact-container a p {
+        display: none;
+    }
+}
