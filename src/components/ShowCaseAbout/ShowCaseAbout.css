@@ -28,7 +28,7 @@
     margin-top: 10px;
 }
 
-.showcaseAbout-container .showcase-image {
+.showcaseAbout-container .showcase-code {
     flex:1;
     overflow: hidden;
     z-index: 1;
@@ -40,14 +40,12 @@
     border: 2px solid #151515;
     transform: translateY(0px);
     transition: 0.2s ease;
+    background: rgb(40, 42, 54);
+    font-size: 1.5rem;
 }
 
-.showcaseAbout-container .showcase-image:hover {
+.showcaseAbout-container .showcase-code:hover {
     transform: translateY(-5px);
-}
-
-.showcaseAbout-container .showcase-image img {
-    position: relative;
 }
 
 @media (max-width: 900px) {
@@ -74,44 +72,33 @@
         margin-top: 20px;
     }
 
-    .showcaseAbout-container .showcase-image {
+    .showcaseAbout-container .showcase-code {
         width: 80vw;
-        max-height: 30vh;
         position: relative;
         top: 0;
         right: 0;
         border: none;
         overflow: hidden;
         transform: translateY(-70px);
+        font-size: 1rem;
     }
 
-    .showcaseAbout-container .showcase-image img {
-        position: relative;
-        width: 140%;
-        height: auto;
-    }
-
-    .showcaseAbout-container .showcase-image:hover {
+    .showcaseAbout-container .showcase-code:hover {
         transform: translateY(-75px);
     }
 }
 
-@media (max-width: 499px) {
+@media (max-width: 500px) {
     .showcaseAbout-container .showcase-texts {
         padding: 30px;  
     }
 
-    .showcaseAbout-container .showcase-image {
+    .showcaseAbout-container .showcase-code {
         transform: translateY(-40px);
+        width: 100vw;
     }
 
-    .showcaseAbout-container .showcase-image img {
-        position: relative;
-        width: 140%;
-        height: auto;
-    }
-
-    .showcaseAbout-container .showcase-image:hover {
+    .showcaseAbout-container .showcase-code:hover {
         transform: translateY(-45px);
     }
 }
