@@ -3,36 +3,36 @@
         "title": "Greek Mathesis",
         "description": "This is Greek Mathesis. I'm a enthusiast of ancient languages, so I built this website in the purpose of helping people with máthesis: a ancient greek project for classical students! This app was made with Svelte and Sapper (and it is still in development).",
         "link": "https://greekmathesis.com",
-        "imageUrl": "mathesis"
+        "imageUrl": "mathesis.PNG"
     },
     {
         "title": "Meme Share",
         "description": "Meme Share is a platform in where people can find in only one place youtube's videos related to memes. I tried to work with new concepts, such as localStorage. Created with React, and its backend was made with Node and MongoDB.",
         "link": "https://memeshare.netlify.com",
-        "imageUrl": "meme"
+        "imageUrl": "meme.png"
     },
     {
         "title": "Colors Project",
         "description": "This one was one of the firt apps I made with a backend server. It provides color palettes added by its community. Yes... it was totally inspired on colorhunt.co; I used React, Node and MongoDB to build this app.",
         "link": "https://colors-project.netlify.com",
-        "imageUrl": "colors"
+        "imageUrl": "colors.png"
     },
     {
         "title": "Buzzati",
         "description": "Buzzati is a fictional company I came up in my head. I coded this page a long time ago, when I was still improving my JS, CSS and HTML skills. Unfortunately, it's not responsive (yet! 😬).",
         "link": "https://buzzati.netlify.com",
-        "imageUrl": "buzzati"
+        "imageUrl": "buzzati.PNG"
     },
     {
         "title": "Scolt (or Scout?)",
         "description": "Another landing page with random sentences I made to improve my design and code. My idea was to create something something clean, so that it shows Scolt's (a fictional technology company) transparency and responsability. Made with pure JS.",
         "link": "https://scolt.netlify.com",
-        "imageUrl": "scolt"
+        "imageUrl": "scolt.png"
     },
     {
         "title": "efilipex",
         "description": "What about the page you're in right now? Well, this page is all about me 🤩! I think here you can learn more about myself, because I try to give some of my personality to the websites I code. And since we're talking about code, this page right here was made with React. You can check the code by clicking in the picture!",
         "link": "https://github.com/eFilipexCode/portifolio",
-        "imageUrl": "efilipex"
+        "imageUrl": "efilipex.png"
     }
 ]
