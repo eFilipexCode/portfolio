@@ -18,12 +18,6 @@
         "imageUrl": "colors.png"
     },
     {
-        "title": "Buzzati",
-        "description": "Buzzati is a fictional company I came up in my head. I coded this page a long time ago, when I was still improving my JS, CSS and HTML skills. Unfortunately, it's not responsive (yet! 😬).",
-        "link": "https://buzzati.netlify.com",
-        "imageUrl": "buzzati.PNG"
-    },
-    {
         "title": "Scolt (or Scout?)",
         "description": "Another landing page with random sentences I made to improve my design and code. My idea was to create something something clean, so that it shows Scolt's (a fictional technology company) transparency and responsability. Made with pure JS.",
         "link": "https://scolt.netlify.com",
