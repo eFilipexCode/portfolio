@@ -17,7 +17,7 @@ export default function Showcase() {
                     <div className="overlay-link">
                         <p>{title} <FiArrowUpRight size={20} color='#fefefe' /></p>
                     </div>
-                    <img src={`${image}.PNG`} alt="Website preview" />
+                    <img src={`${image}`} alt="Website preview" />
                 </a>
             </div>
         </div>
