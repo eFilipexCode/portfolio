@@ -12,14 +12,13 @@ export default function Showcase() {
                 <h1>{title}</h1>
                 <p className="description">{description}</p>
             </div>
-            <div className="showcase-image">
-                <a href={link} target="_blank" rel="noreferrer">
+            <a href={link} target="_blank" rel="noreferrer">
+                <div className="showcase-image" style={{ backgroundImage: `url(${image})` }}>
                     <div className="overlay-link">
                         <p>{title} <FiArrowUpRight size={20} color='#fefefe' /></p>
                     </div>
-                    <img src={`${image}.PNG`} alt="Website preview" />
-                </a>
-            </div>
+                </div>
+            </a>
         </div>
     );
 };
