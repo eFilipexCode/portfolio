@@ -11,7 +11,7 @@ export default function ContactTab() {
                     <p>Follow me on Github 💻</p>
                 </div>
             </a>
-            <a href="linkedin.com/in/emanuel-filipe-1599b41a6/">
+            <a href="https://www.linkedin.com/in/emanuel-filipe-1599b41a6/">
                 <div className="contact-option">
                     <FiLinkedin size={60} color="#151515" />
                     <p>Visit my LinkedIn 🔗</p>
