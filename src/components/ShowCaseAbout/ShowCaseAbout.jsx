@@ -19,7 +19,7 @@ export default function ShowcaseAbout({ title, description }) {
                 <p className="description">{description}</p>
             </div>
             <div className="showcase-code">
-                <CopyBlock theme={dracula} text={code} language="jsx" showLineNumbers />
+                <CopyBlock theme={dracula} text={code} language="jsx" showtime numbers={false} />
             </div>
         </div>
     );
