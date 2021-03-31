@@ -20,9 +20,6 @@
     align-items: center;
 }
 
-.header-container p span {
-    transition: all ease-out 0.3s;
-}
 
 .header-container p::selection {
     background-color: unset;
@@ -32,6 +29,10 @@
     width: 0px;
     overflow: hidden;
     opacity: 0;
+}
+
+.header-container p span{
+    transition: 0.3s;
 }
 
 .contacts-header {
@@ -54,6 +55,40 @@
     top: -5px;
 }
 
+div.toggle-theme-container {
+    width: 50px;
+    cursor: pointer;
+    border-radius: 30px;
+    position: relative;
+    margin-right: 30px;
+    transition: background 0.3s ease;
+}
+
+.toggle-theme-container input {
+    width: 30px;
+    height: 15px;
+    opacity: 0;
+    cursor: inherit;
+}
+
+.toggle-theme-container .index {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.3s ease;
+    left: 0;
+}
+
+.spin {
+    animation: spin 0.3s ease forwards;
+}
+
 @media (max-width: 501px) {
     .header-container {
         justify-content: center;
@@ -64,5 +99,15 @@
     }
     .contacts-header {
         display: none;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }
