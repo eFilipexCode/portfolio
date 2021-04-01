@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.css';
 import OptionIcon from '../OptionIcon/OptionIcon';
-import { SiTypescript, SiJavascript, SiCss3, SiHtml5, SiNodeDotJs, SiReact, SiSvelte } from 'react-icons/si';
+import { SiTypescript, SiJavascript, SiCss3, SiHtml5, SiNodeDotJs, SiReact, SiSvelte, SiVueDotJs, SiGit } from 'react-icons/si';
 
 function Skills() {
     return (
@@ -36,6 +36,12 @@ function Skills() {
                 title="NodeJS"
                 iconObjConfig={{ size: 60, color: '#3c873a' }}
             />
+             <OptionIcon
+                skillLevel={35}}
+                Icon={SiGit}
+                title="Git"
+                iconObjConfig={{ size: 60, color: '#F05032' }}
+            />
             <OptionIcon
                 skillLevel={30}
                 Icon={SiSvelte}
@@ -47,6 +53,12 @@ function Skills() {
                 Icon={SiTypescript}
                 title="Typescript"
                 iconObjConfig={{ size: 60, color: 'dodgerblue' }}
+            />
+            <OptionIcon
+                skillLevel={15}
+                Icon={SiVueDotJs}
+                title="VueJS"
+                iconObjConfig={{ size: 60, color: '#4FC08D' }}
             />
         </div>
     );
