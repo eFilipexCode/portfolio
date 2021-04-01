@@ -37,7 +37,7 @@ function Skills() {
                 iconObjConfig={{ size: 60, color: '#3c873a' }}
             />
              <OptionIcon
-                skillLevel={35}}
+                skillLevel={35}
                 Icon={SiGit}
                 title="Git"
                 iconObjConfig={{ size: 60, color: '#F05032' }}
