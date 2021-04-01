@@ -29,7 +29,7 @@
 }
 
 .showcaseAbout-container .showcase-code {
-    flex:1;
+    flex: 1;
     overflow: hidden;
     z-index: 1;
     position: absolute;
@@ -55,23 +55,19 @@
         align-items: center;
         margin: 0px;
     }
-
     .showcaseAbout-container .showcase-texts {
         width: 100%;
         height: 20rem;
         border: none;
-        background-color: #eee;
         margin: 20px 0px;
         align-items: center;
         justify-content: center;
         padding: 60px;
-        transform: translateY(0px);    
+        transform: translateY(0px);
     }
-
     .showcaseAbout-container .showcase-texts p.description {
         margin-top: 20px;
     }
-
     .showcaseAbout-container .showcase-code {
         width: 80vw;
         position: relative;
@@ -82,7 +78,6 @@
         transform: translateY(-70px);
         font-size: 1rem;
     }
-
     .showcaseAbout-container .showcase-code:hover {
         transform: translateY(-75px);
     }
@@ -90,14 +85,12 @@
 
 @media (max-width: 500px) {
     .showcaseAbout-container .showcase-texts {
-        padding: 30px;  
+        padding: 30px;
     }
-
     .showcaseAbout-container .showcase-code {
         transform: translateY(-40px);
         width: 100vw;
     }
-
     .showcaseAbout-container .showcase-code:hover {
         transform: translateY(-45px);
     }
