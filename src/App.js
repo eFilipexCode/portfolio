@@ -5,6 +5,7 @@ import SectionSelector from './components/SectionSelector/SectionSelector';
 import Topic from './components/Topic/Topic';
 import ContactTab from './components/ContactTab/ContactTab';
 import Footer from './components/Footer/Footer';
+import Skills from './components/Skills/Skills';
 import { WebsitesContextProvider } from './contexts/WebsitesContext';
 import { ThemeContext } from './contexts/ThemeContext';
 import { useContext } from 'react';
@@ -21,6 +22,8 @@ function App() {
         <Topic title="Projects" description="Here are some of the projects I build on my own! Let's check it out." />
         <SectionSelector />
         <Showcase />
+        <Topic title="Skills" description="Tools I can use" />
+        <Skills />
         <Topic title="Contact" description="Let's keep in touch!" />
         <ContactTab />
         <Footer />
