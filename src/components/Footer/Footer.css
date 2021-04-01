@@ -2,10 +2,19 @@
     width: 100vw;
     height: 150px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
     font-style: italic;
     border-top: 3px solid #151515;
+}
+
+.footer p {
+    padding: 5px 0px;
+}
+
+.footer .quote {
+    font-size: 0.9rem;
 }

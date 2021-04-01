@@ -8,6 +8,7 @@ export default function Footer() {
     return (
         <div className="footer"  style={{color: currentPalette.black, borderColor: currentPalette.tertiary}}>
             <p>{'</efilipex>'}</p>
+            <span className="quote">"Et Verbum caro factum est..." (Jo. 1:14)</span>
         </div>
     );
 };
