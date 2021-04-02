@@ -31,7 +31,6 @@
     align-items: center;
     justify-content: flex-start;
     position: relative;
-    width: auto;
 }
 
 .title-topic-container h1 span {
@@ -43,9 +42,11 @@
     opacity: 0;
     transition: 0.3s ease;
     cursor: default;
+    position: absolute;
+    left: -30px;
 }
 
-.title-topic-container > h1:hover span {
+.title-topic-container>h1:hover span {
     opacity: 1;
 }
 
@@ -70,9 +71,13 @@ h1:hover .underline-bar {
         padding: 30px;
         margin-top: 30px;
     }
-
     .sections-header p {
         margin-top: 15px;
         text-indent: 0px;
-    }    
+    }
+    .sections-header h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
