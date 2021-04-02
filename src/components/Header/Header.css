@@ -90,6 +90,16 @@ div.toggle-theme-container {
     animation: spin 0.3s ease forwards;
 }
 
+@media (max-width: 900px) {
+    .header-container {
+        padding: 0px;
+        justify-content: space-between;
+    }
+    .header-container p {
+        text-align: center;
+    }
+}
+
 @media (max-width: 631px) {
     .header-container {
         justify-content: center;
