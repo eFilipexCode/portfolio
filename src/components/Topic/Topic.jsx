@@ -7,7 +7,13 @@ export default function Topic({ title, description }) {
 
     return (
         <div className="sections-header">
-            <h1 id={title}><a style={{ color: currentPalette.black }} href={"#" + title}>{title}</a></h1>
+            <div className="title-topic-container">
+                <h1 id={title}>
+                    <span style={{ color: currentPalette.black }} className="hash">#</span>
+                    <a style={{ color: currentPalette.black }} href={"#" + title}>{title}</a>
+                    <div className="underline-bar" style={{ background: currentPalette.black }}></div>
+                </h1>
+            </div>
             <p style={{ color: currentPalette.black }}>{description}</p>
         </div>
     );
