@@ -20,16 +20,51 @@
     margin: 10px;
 }
 
+.level-bar-container {
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
 .level-bar {
     transition: width 0.3s ease;
-    height: 3px;
-    position: absolute;
-    bottom: 0;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 0;
+}
+
+.level-bar .triangle {
+    left: 5px;
+    position: relative;
+    margin-top: 8px;
+    animation: bounce 1s ease infinite;
 }
 
 @media (max-width: 501px) {
     .option-icon-container {
         filter: grayscale(0);
         pointer-events: none;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-3px);
+    }
+
+    100% {
+        transform: translateY(0px);
     }
 }
