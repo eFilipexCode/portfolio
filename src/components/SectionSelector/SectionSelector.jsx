@@ -25,9 +25,11 @@ export default function SectionSelector() {
         <div className="sections-container">
             <div className="project-buttons">
                 {[...websites].map(website => (
-                    <button style={{ borderColor: currentPalette.tertiary, color: currentPalette.black, background: currentPalette.secondary }} onClick={() => handleChangeContextData(website)}>
-                        {website.title}
-                    </button>
+                    <a href={`#${website.title}`}>
+                        <button style={{ borderColor: currentPalette.tertiary, color: currentPalette.black, background: currentPalette.secondary }} onClick={() => handleChangeContextData(website)}>
+                            {website.title}
+                        </button>
+                    </a>
                 ))}
             </div>
         </div>

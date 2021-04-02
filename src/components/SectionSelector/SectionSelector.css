@@ -11,7 +11,11 @@
     align-items: center;
 }
 
-.project-buttons > button {
+.project-buttons a {
+    text-decoration: none;
+}
+
+.project-buttons > a button{
     padding: 15px 10px;
     border: none;
     font-family: 'Merriweather', serif;
@@ -42,14 +46,14 @@
         padding: 0px 30px;
     }
 
-    .sections-container .project-buttons button {
+    .sections-container .project-buttons a button {
         margin: 10px 5px;
         text-align: center;
     }
 }
 
 @media (max-width: 499px) {
-    .sections-container .project-buttons button {
+    .sections-container .project-buttons a button {
         margin: 3px 2.5px;
     }
 }
