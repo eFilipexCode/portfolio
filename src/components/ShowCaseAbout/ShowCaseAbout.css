@@ -67,6 +67,7 @@
     }
     .showcaseAbout-container .showcase-texts p.description {
         margin-top: 20px;
+        line-height: 160%;
     }
     .showcaseAbout-container .showcase-code {
         width: 80vw;
@@ -75,11 +76,11 @@
         right: 0;
         border: none;
         overflow: hidden;
-        transform: translateY(-70px);
-        font-size: 1rem;
+        transform: translateY(-40px);
+        font-size: 1.2rem;
     }
     .showcaseAbout-container .showcase-code:hover {
-        transform: translateY(-75px);
+        transform: translateY(-45px);
     }
 }
 

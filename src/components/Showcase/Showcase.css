@@ -20,6 +20,7 @@
     margin: 20px;
     transform: translateY(70px);
     text-align: center;
+    word-spacing: 1px;
 }
 
 .showcase-texts p.description {
@@ -53,7 +54,7 @@
     filter: blur(1px);
 }
 
-.showcase-image > a {
+.showcase-image>a {
     width: 100%;
     height: 100%;
     z-index: 10;
@@ -85,7 +86,6 @@
     opacity: 1;
 }
 
-
 @media (max-width: 900px) {
     .showcase-container {
         flex-direction: column;
@@ -104,6 +104,7 @@
         transform: translateY(0px);
     }
     .showcase-container .showcase-texts p.description {
+        line-height: 160%;
         margin-top: 20px;
     }
     .showcase-container .showcase-image {
@@ -114,10 +115,10 @@
         right: 0;
         border: none;
         overflow: hidden;
-        transform: translateY(-70px);
+        transform: translateY(-40px);
     }
     .showcase-container .showcase-image:hover {
-        transform: translateY(-75px);
+        transform: translateY(-45px);
     }
 }
 
@@ -127,10 +128,10 @@
     }
     .showcase-container .showcase-image {
         width: 90vw;
-        transform: translateY(-40px);
+        transform: translateY(-15px);
     }
     .showcase-container .showcase-image:hover {
-        transform: translateY(-40px);
+        transform: translateY(-20px);
     }
     .showcase-container .showcase-image:hover img {
         filter: none;

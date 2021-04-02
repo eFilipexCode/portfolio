@@ -9,7 +9,7 @@ export default function Showcase() {
     const { currentPalette } = useContext(ThemeContext);
 
     return (
-        <div className="showcase-container">
+        <div className="showcase-container" id={`${title}`}>
             <div className="showcase-texts" style={{ borderColor: currentPalette.black }}>
                 <h1 style={{ color: currentPalette.black }}>{title}</h1>
                 <p style={{ color: currentPalette.black }} className="description">{description}</p>

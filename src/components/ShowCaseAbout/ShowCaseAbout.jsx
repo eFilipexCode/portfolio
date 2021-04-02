@@ -11,8 +11,8 @@ export default function ShowcaseAbout({ title, description }) {
     age: 18,
     country: "Brazil",
     email: "efilipecode@gmail.com",
-    github: "https://github.com/eFilipexCode",
-    linkedIn: "https://www.linkedin.com/in/efilipex",
+    github: "github.com/eFilipexCode",
+    linkedIn: "linkedin.com/in/efilipex",
     loves_coding: true
 };
 `;
