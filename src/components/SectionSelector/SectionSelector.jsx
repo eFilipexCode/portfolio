@@ -17,6 +17,7 @@ export default function SectionSelector() {
     setLink(link);
   }
 
+  const selectedColor = "#10AC84";
   return (
     <div className="sections-container">
       <div className="project-buttons">
@@ -24,8 +25,14 @@ export default function SectionSelector() {
           <a href={`#${website.title}`}>
             <button
               style={{
-                borderColor: title === website.title ? '#10AC84' : currentPalette.tertiary,
-                color: title === website.title ? '#10AC84' : currentPalette.black,
+                borderColor:
+                  title === website.title
+                    ? selectedColor
+                    : currentPalette.tertiary,
+                color:
+                  title === website.title
+                    ? selectedColor
+                    : currentPalette.black,
                 background: currentPalette.secondary,
               }}
               onClick={() => handleChangeContextData(website)}
