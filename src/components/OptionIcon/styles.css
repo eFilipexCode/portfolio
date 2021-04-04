@@ -48,13 +48,6 @@
     animation: bounce 1s ease infinite;
 }
 
-@media (max-width: 501px) {
-    .option-icon-container {
-        filter: grayscale(0);
-        pointer-events: none;
-    }
-}
-
 @keyframes bounce {
     0% {
         transform: translateY(0);
