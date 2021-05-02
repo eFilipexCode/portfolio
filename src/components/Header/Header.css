@@ -97,7 +97,6 @@ div.toggle-theme-container {
 
 @media (max-width: 900px) {
     .header-container {
-        padding: 0px;
         justify-content: space-between;
     }
     .header-container p {
@@ -117,6 +116,9 @@ div.toggle-theme-container {
         display: none;
     }
     div.toggle-theme-container {
+       margin-right: 0.5rem; 
+    }
+    .tools-wrapper {
         position: absolute;
         right: 0px;
         margin: 0px 30px;

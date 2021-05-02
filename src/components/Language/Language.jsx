@@ -35,7 +35,7 @@ function Language() {
     return (
         <div style={{ backgroundColor: currentPalette.primary }} onClick={() => setIsOpen(current => !current)} className="language-container">
             <span>{languagesLabels[`${language}`].label.split(" ")[0]}</span>
-            <FiChevronDown />
+            <FiChevronDown color={currentPalette.black}/>
 
             {isOpen && (
                 <ul style={{ color: currentPalette.black }} className="languages">
