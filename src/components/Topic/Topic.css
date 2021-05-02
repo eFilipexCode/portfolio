@@ -17,6 +17,7 @@
     font-family: 'Playfair Display', serif;
     font-weight: 300;
     font-style: italic;
+    margin-left: 10px;
 }
 
 .sections-header p {
@@ -38,12 +39,12 @@
     font-weight: 300;
     font-style: italic;
     font-size: 2.5rem;
-    margin-right: 5px;
     opacity: 0;
     transition: 0.3s ease;
     cursor: default;
     position: absolute;
     left: -30px;
+    bottom: 0;
 }
 
 .title-topic-container>h1:hover span {
