@@ -9,26 +9,28 @@ import Skills from './components/Skills/Skills';
 import { WebsitesContextProvider } from './contexts/WebsitesContext';
 import { ThemeContext } from './contexts/ThemeContext';
 import { useContext } from 'react';
+import { LanguageContext } from './contexts/LanguageContext';
 
 function App() {
   const { currentPalette } = useContext(ThemeContext);
+  const { languages, language } = useContext(LanguageContext);
 
   return (
-    <WebsitesContextProvider>
-      <div style={{ background: currentPalette.primary }}>
-        <Header />
-        <Topic title="About me" description="Who's efilipex? 🤔" />
-        <ShowCaseAbout title="Emanuel Filipe" description="Hello! Super glad you're here 😁. I'm Emanuel Filipe - or also called efilipex - and I'm a frontend development student, seeking new knowledges and skills! I'm currently learning ReactJs, React Native, Node, Svelte, Typescript and Python." />
-        <Topic title="Projects" description="Here are some of the projects I build on my own! Let's check it out." />
-        <SectionSelector />
-        <Showcase />
-        <Topic title="Skills" description="Tools I can use" />
-        <Skills />
-        <Topic title="Contact" description="Let's keep in touch!" />
-        <ContactTab />
-        <Footer />
-      </div>
-    </WebsitesContextProvider>
+      <WebsitesContextProvider>
+        <div style={{ background: currentPalette.primary }}>
+          <Header />
+          <Topic title={languages[`${language}`].titles.aboutMe} description={languages[`${language}`].titleDescriptions.aboutMe} />
+          <ShowCaseAbout title="Emanuel Filipe" description={languages[`${language}`].showCaseAboutDescription} />
+          <Topic title={languages[`${language}`].titles.projects} description={languages[`${language}`].titleDescriptions.projects} />
+          <SectionSelector />
+          <Showcase />
+          <Topic title={languages[`${language}`].titles.skills} description={languages[`${language}`].titleDescriptions.skills} />
+          <Skills />
+          <Topic title={languages[`${language}`].titles.contact} description={languages[`${language}`].titleDescriptions.contact} />
+          <ContactTab currentLanguage={language}/>
+          <Footer />
+        </div>
+      </WebsitesContextProvider>
   );
 }
 

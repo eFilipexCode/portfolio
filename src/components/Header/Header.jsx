@@ -2,16 +2,14 @@ import React, { useState, useContext } from 'react';
 import './Header.css';
 import { FiGithub, FiLinkedin, FiMail, FiSun, FiMoon } from "react-icons/fi";
 import { ThemeContext } from '../../contexts/ThemeContext';
+import Language from '../Language/Language';
 
 export default function Header() {
     const [fulltext, setFullText] = useState(false);
     const { currentPalette, toggleTheme, theme } = useContext(ThemeContext);
 
     function animateTitleText(mouseover) {
-        if (mouseover)
-            setFullText(true);
-        else
-            setFullText(false);
+        mouseover ? setFullText(true) : setFullText(false);
     };
 
     return (
@@ -34,16 +32,19 @@ export default function Header() {
                     style={{ width: fulltext ? '90px' : '0px', opacity: fulltext ? '1' : '0' }}>ilipe</span>
                 <span>{'x>'}</span>
             </p>
-            <div onClick={() => toggleTheme(theme)} className="toggle-theme-container" style={{ background: currentPalette.tertiary }}>
-                <input className="toggle-theme-button" type="checkbox" />
-                <div className="index" style={{
-                    background: currentPalette.secondary,
-                    left: theme === 'light' ? 0 : 25
-                }}>
-                    {
-                        theme === 'light' ? (<FiSun size={17} className="spin" color='#151515' />) : <FiMoon size={17} className="spin" color='#ddd' />
-                    }
+            <div className="tools-wrapper">
+                <div onClick={() => toggleTheme(theme)} className="toggle-theme-container" style={{ background: currentPalette.tertiary }}>
+                    <input className="toggle-theme-button" type="checkbox" />
+                    <div className="index" style={{
+                        background: currentPalette.secondary,
+                        left: theme === 'light' ? 0 : 25
+                    }}>
+                        {
+                            theme === 'light' ? (<FiSun size={17} className="spin" color='#151515' />) : <FiMoon size={17} className="spin" color='#ddd' />
+                        }
+                    </div>
                 </div>
+                <Language />
             </div>
         </header>
     );

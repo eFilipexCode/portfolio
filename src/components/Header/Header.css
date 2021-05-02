@@ -1,7 +1,7 @@
 .header-container {
     width: 100vw;
     height: 6rem;
-    padding: 30px 70px;
+    padding: 30px 50px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -54,6 +54,11 @@
 
 .contacts-header a:hover {
     top: -5px;
+}
+
+.tools-wrapper {
+    display: flex;
+    align-items: center;
 }
 
 div.toggle-theme-container {

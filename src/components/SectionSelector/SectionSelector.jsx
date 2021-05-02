@@ -22,7 +22,7 @@ export default function SectionSelector() {
     <div className="sections-container">
       <div className="project-buttons">
         {[...websites].map((website) => (
-          <a href={`#${website.title}`}>
+          <a href={`#${website.title}`} key={website.title}>
             <button
               style={{
                 borderColor:
