@@ -40,3 +40,10 @@
 .languages li:hover {
     opacity: 0.7;
 }
+
+@media (max-width: 631px) {
+    .languages {
+        right: unset;
+        left: 0;
+    } 
+}

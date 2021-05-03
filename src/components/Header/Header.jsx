@@ -34,7 +34,7 @@ export default function Header() {
             </p>
             <div className="tools-wrapper">
                 <div onClick={() => toggleTheme(theme)} className="toggle-theme-container" style={{ background: currentPalette.tertiary }}>
-                    <input className="toggle-theme-button" type="checkbox" />
+                    <div className="toggle-theme-button" />
                     <div className="index" style={{
                         background: currentPalette.secondary,
                         left: theme === 'light' ? 0 : 25

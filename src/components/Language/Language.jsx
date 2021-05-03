@@ -32,18 +32,23 @@ function Language() {
     const { currentPalette } = useContext(ThemeContext);
     const { language, setLanguage } = useContext(LanguageContext);
 
+    const handleClick = (item) => {
+        setLanguage(languagesLabels[item].value); 
+        return setIsOpen(cur => !cur);
+    };
+
     return (
         <div style={{ backgroundColor: currentPalette.primary }} onClick={() => setIsOpen(current => !current)} className="language-container">
             <span>{languagesLabels[`${language}`].label.split(" ")[0]}</span>
-            <FiChevronDown color={currentPalette.black}/>
+            <FiChevronDown color={currentPalette.black} />
 
             {isOpen && (
                 <ul style={{ color: currentPalette.black }} className="languages">
                     {Object.keys(languagesLabels).map(item => {
                         return (
                             languagesLabels[item].value !== language &&
-                            <li key={languagesLabels[item].value} onClick={() => { setLanguage(languagesLabels[item].value)}}>
-                                <span onClick={() => setIsOpen(false)}>{languagesLabels[item].label}</span>
+                            <li key={languagesLabels[item].value} onClick={() => handleClick(item)}>
+                                <span>{languagesLabels[item].label}</span>
                             </li>
                         )
                     })}
