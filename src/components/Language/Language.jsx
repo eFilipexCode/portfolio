@@ -31,10 +31,10 @@ function Language() {
     const [isOpen, setIsOpen] = useState(false);
     const { currentPalette } = useContext(ThemeContext);
     const { language, setLanguage } = useContext(LanguageContext);
+    console.log('renderizado', isOpen);
 
     const handleClick = (item) => {
-        setLanguage(languagesLabels[item].value); 
-        return setIsOpen(cur => !cur);
+        setLanguage(languagesLabels[item].value);
     };
 
     return (
@@ -47,8 +47,8 @@ function Language() {
                     {Object.keys(languagesLabels).map(item => {
                         return (
                             languagesLabels[item].value !== language &&
-                            <li key={languagesLabels[item].value} onClick={() => handleClick(item)}>
-                                <span>{languagesLabels[item].label}</span>
+                            <li key={languagesLabels[item].value} onClick={() => {handleClick(item); setIsOpen(false)}}>
+                                <span onClick={() => setIsOpen(false)}>{languagesLabels[item].label}</span>
                             </li>
                         )
                     })}
